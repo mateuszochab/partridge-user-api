@@ -29,7 +29,7 @@ public class UserCore {
     @Size(min = 8, message = "Password should have atleast 8 characters")
     @Pattern(regexp = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$", message = "atleast one uppercase, one lowercase character and one number")
     @Field(value = "password")
-    private String password;
+    private String password; //if not using hibernate have to change type to array of chars
 
 
     @NotNull
